@@ -20,13 +20,13 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Eric Lin",
+  title: "Hi all, I'm Eric Lin",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Front End Developer 🚀 having an experience of building Web and Mobile applications with Angular, HTML/CSS, JavaScript, Nodejs and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    require("./assets/cv_of_Eric_Lin_.pdf"), // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -42,7 +42,7 @@ const socialMediaLinks = {
   stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 // Skills Section
@@ -52,12 +52,34 @@ const skillsSection = {
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Around 7 years of strong experience in developing web applications by using Angular 2+, AngularJS, JavaScript, TypeScript, HTML5, CSS3, Bootstrap, JQuery, Ajax, JSON."
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Extensive experience in Angular 2+ features like Routing, Data Binding, Directives, Page Loading, Component Communication, Dependency Injection, Service, HTTP server, Forms, and Exception Handling."),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+      "⚡ Experience in writing Angular Modules, Components, Services, Controllers, Interceptor, Custom Validators, Custom Pipes, and Custom Directives."
+    ),
+
+
+    emoji(
+      "⚡ Strong knowledge of RxJs library, NgRx, and Angular Material."
+    ),
+    emoji("⚡ Good knowledge of testing frameworks and tools including JUnit, Karma, Mockito, Jasmine, Fiddler, and Postman."),
+    emoji(
+      "⚡ Hands-on experience writing web services both client-side and server-side using RESTful web services."
+    ),
+
+    emoji(
+      "⚡ Hands-on experience with back-end skills such as Spring Core, Spring MVC, Spring Boot, Node.js, Express.js, and Hibernate."
+    ),
+    emoji("⚡ StrongknowledgeofMongoDB,Oracle,SQLServer,andMySQLand proficiency in writing complex SQL, PL/SQL."),
+    emoji(
+      "⚡ Expertise in version control tools like GIT and SVN to manage and control software development."
+    ),
+
+    emoji(
+      "⚡ Experience in all phases of CI/CD like Requirement Analysis, Implementation, Maintenance, and extensive experience with Agile and Scrum."
+    ),
+    emoji("⚡ Excellent communication skills, interpersonal, strong architectural skills, hardworking, and a very good team player."),
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -81,6 +103,10 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-js"
     },
     {
+      skillName: "Angular",
+      fontAwesomeClassname: "fab fa-angular"
+    },
+    {
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react"
     },
@@ -88,10 +114,10 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
     },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
+    // {
+    //   skillName: "swift",
+    //   fontAwesomeClassname: "fab fa-swift"
+    // },
     {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
@@ -104,14 +130,14 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
     },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
+    // {
+    //   skillName: "firebase",
+    //   fontAwesomeClassname: "fas fa-fire"
+    // },
+    // {
+    //   skillName: "python",
+    //   fontAwesomeClassname: "fab fa-python"
+    // },
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
@@ -126,23 +152,13 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Stony Brook University",
+      logo: require("./assets/images/stonybrook.png"),
+      subHeader: "Bachelor of Science in Computer Science, Applied Mathematics & Statistics",
+      duration: "",
+      desc: "",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -153,16 +169,20 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Frontend(HTML, CSS, Javascript, Typescript, Angular, Bootstrap, AJAX, JQuery)", //Insert stack or technology you have experience in
+      progressPercentage: "95%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
+      Stack: "Backend(Node.js, Express.js, Spring Core, Spring Boot, Hibernate)",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Database(MySQL, MongoDB)",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Testing(Junit, Mockito, Jasmine, Karma, Postman)",
       progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -174,30 +194,88 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Front-End Developer",
+      company: "CVS",
+      companylogo: require("./assets/images/CVS2.png"),
+      date: "Jan 2022 - Jul 2023",
+      desc: "",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed and debugged Angular 14 component files using HTML5, SCSS, JavaScript, TypeScript.",
+        "Good knowledge on various Website Design Tools like HTML5, CSS3, SASS/LESS CSS JavaScript, Angular 14, Bootstrap, Angular material.",
+        "Created reusable registration forms/components to streamline development.",
+        "Developed responsive and mobile-friendly registration UI with Angular Material/Bootstrap.",
+        "Good experience with building applications with REST API services.",
+        "Implemented registration data validation and error handling with Angular forms.",
+        "Provided seamless navigation and transitions between registration steps using Angular routing.",
+        "Used Jasmine, Karma to build and test application. Performed unit testing using Jasmine.",
+        "Maintained and enhanced registration features by leveraging core Angular concepts like modularity, observables, dependency injection, etc.",
+        "Optimized Angular build and deployment process for faster rendering of the registration pages.",
+        "Worked closely with accessibility team to ensure registration pages meet WCAG standards and are accessible to users with disabilities.",
+        "Good understand and experience in UX mockup tools like Invision and Figma.",
+        "Analyzed, evaluated, and made recommendations on UI frameworks, technologies, and architecture.",
+        "Efficiently resolved various front-end issues during registration to ensure stability.",
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Angular Developer",
+      company: "Picwell",
+      companylogo: require("./assets/images/picwell.jpeg"),
+      date: "Sep 2019 – Dec 2021",
+      desc: "",
+      descBullets: [
+        "Involved in all stages of software development life cycle including analysis, development, implementation, testing and support.",
+        "Developed various pages in the applications using HTML5, CSS3, JSON, JavaScript, Angular 8/10, and Angular Material.",
+        "Built Angular 8/10 components, UI services to consume rest services using Component based architecture provided by Angular 8/10.",
+        "Created Angular components like Components, Directives, Services, and ReactiveForms to collect input from the users.",
+        "Worked on Angular 8/10 features like Routing, Data Binding, Directives, Page Loading, Component Communication, Dependency Injection, Service, HTTP server, Forms, and Exception Handling.",
+        "Incorporated D3.js with Angular 8/10 and built interactive data visualizations such as bar charts and line charts using JSON data sets.",
+        "Developing RESTFUL web services using Spring Boot, Spring RESTFUL template.",
+        "Worked with Karma and Jasmine, supporting QA team to debug and write tests.",
+        "Automated the build and deployment process using Maven build script.",
+        "Responsible for maintaining versions of source code using Git.",
+        "Involved in Agile process, two-week Sprints, and daily Scrums to discuss the development of the application."
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
+      role: "Angular Developer",
+      company: "Evercore Partners",
+      companylogo: require("./assets/images/ev.jpeg"),
+      date: "Aug 2017 - Sep 2019",
+      desc: "",
+      descBullets: [
+        "Implemented Single Page Web Applications (SPA) for displaying user requests, user records history and various analytics by using Angular 4.",
+        "Responsible for setting up Angular 4 framework for UI development. Developed html views with HTML5, CSS3, JSON, Angular Material and Angular 4.",
+        "Worked on Angular 4 features like Two Way Binding, Custom Directives, Controllers, Filters, Services and Http Request.",
+        "Designed and created various forms using ReactiveForm in angular 4.",
+        "Worked with UX designers and used Angular 4 Material and CSS3 to create web pages based on the mockups.",
+        "Created view-model and controllers and worked with demo JSON data and services until API gets ready.",
+        "Developed RESTful APIs using SpringBoot and Hibernate.",
+        "Tested the created web services of the Web API controllers, and actions route using Postman.",
+        "Involved in unit testing of the software modules using Karma and Jasmine.",
+        "Responsible for maintaining versions of source code using Git.",
+        "Participated in daily Scrum meets and used AGILE methodologies with JIRA to manage development process of the project."
+      ]
+    },
+
+    {
+      role: "Web Developer",
+      company: "ACV Auctions",
+      companylogo: require("./assets/images/acv.jpeg"),
+      date: "Jun 2016 - Apr 2017",
+      desc: "",
+      descBullets: [
+        "Designed dynamic and browser compatible pages using HTML5, CSS3, jQuery and JavaScript.",
+        "Used advanced level of HTML5, JavaScript, CSS3 to build the pages.",
+        "Produced content pages with CSS3 layout and style markup presentations and used JavaScript methods and properties.",
+        "Used Bootstrap front-end framework for faster and easier web development with MSSQL database as the backend.",
+        "Successfully implemented Auto Complete/Auto Suggest functionality using Ajax, jQuery, Web Service call and JSON.",
+        "Used JavaScript unit testing frameworks like jasmine for client side.",
+        "Design and implemented Restful API layer along with calls to consume an API layer.",
+        "Developed RESTful API using Spring Boot and Hibernate.",
+        "Created tables and indexes and wrote Stored Procedures, Functions and Triggers in SQL Server.",
+        "Utilized GitHub for version Control and source code maintenance needs."
+      ]
+    },
   ]
 };
 
@@ -239,7 +317,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -292,7 +370,7 @@ const achievementSection = {
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
+        { name: "Certification", url: "" },
         {
           name: "Final Project",
           url: "https://pakistan-olx-1.firebaseapp.com/"
@@ -300,7 +378,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -324,7 +402,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +421,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,25 +434,25 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "267-340-7631",
+  email_address: "ericlin3589@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,

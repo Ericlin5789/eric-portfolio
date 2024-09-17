@@ -20,13 +20,16 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Eric Lin",
-  title: "Hi all, I'm Eric Lin",
+  //eric version
+  username: "Feng Lin",
+  title: "Hi all, I'm Feng Lin",
   subTitle: emoji(
     "A passionate Front End Developer 🚀 having an experience of building Web and Mobile applications with Angular, HTML/CSS, JavaScript, Nodejs and some other cool libraries and frameworks."
   ),
   resumeLink:
-    require("./assets/cv_of_Eric_Lin_.pdf"), // Set to empty to hide the button
+    //eric version
+    // require("./assets/cv_of_Eric_Lin_.pdf"), // Set to empty to hide the button
+    require("./assets/RESUME.pdf"),
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -51,6 +54,8 @@ const skillsSection = {
   title: "What I do",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
+    //eric version
+    /*
     emoji(
       "⚡ Around 7 years of strong experience in developing web applications by using Angular 2+, AngularJS, JavaScript, TypeScript, HTML5, CSS3, Bootstrap, JQuery, Ajax, JSON."
     ),
@@ -80,6 +85,30 @@ const skillsSection = {
       "⚡ Experience in all phases of CI/CD like Requirement Analysis, Implementation, Maintenance, and extensive experience with Agile and Scrum."
     ),
     emoji("⚡ Excellent communication skills, interpersonal, strong architectural skills, hardworking, and a very good team player."),
+    */
+
+    emoji("⚡ Around 3 years of strong experience in developing web applications by using Angular, AngularJS, JavaScript, TypeScript, HTML5, CSS3, Bootstrap, JQuery, Ajax, JSON."
+    ),
+    emoji("⚡ Extensive experience in Angular features like Routing, Data Binding, Directives, Page Loading, Component Communication, Dependency Injection, Service, HTTP server, Forms, and Exception Handling."
+    ),
+    emoji("⚡ Experience in writing Angular Modules, Components, Services, Controllers, Interceptor, Custom Validators, Custom Pipes, and Custom Directives."
+    ),
+    emoji("⚡ Strong knowledge of RxJs library, NgRx, and Angular Material."
+    ),
+    emoji("⚡ Good knowledge of testing frameworks and tools including JUnit, Karma, Mockito, Jasmine, Fiddler, and Postman."
+    ),
+    emoji("⚡ Hands-on experience writing web services both client-side and server-side using RESTful web services."
+    ),
+    emoji("⚡ Around 3 years of extensive experience in backend web development using Node.js and Express.js. Proficient in JavaScript and TypeScript, leveraging their features for efficient and scalable web application development."
+    ),
+    emoji("⚡ Skilled in developing RESTful APIs with Express.js, ensuring robust and scalable server-side solutions."
+    ),
+    emoji("⚡ Strong knowledge of Node.js asynchronous programming model and event-driven architecture."
+    ),
+    emoji("⚡ Experience with Node.js frameworks such as Express.js and Koa.js for building efficient web applications and APIs."
+    ),
+    emoji("⚡ Familiarity with Node.js ORM libraries such as Sequelize and Mongoose, enabling efficient database interactions with MySQL, PostgreSQL, and MongoDB."
+    ),
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -197,9 +226,13 @@ const workExperiences = {
       role: "Front-End Developer",
       company: "CVS",
       companylogo: require("./assets/images/CVS2.png"),
-      date: "Jan 2022 - Jul 2023",
+      //eric version
+      // date: "Jan 2022 - Jul 2023",
+      date: "Jan 2022 - Dec 2023",
       desc: "",
       descBullets: [
+        //eric version
+        /*
         "Developed and debugged Angular 14 component files using HTML5, SCSS, JavaScript, TypeScript.",
         "Good knowledge on various Website Design Tools like HTML5, CSS3, SASS/LESS CSS JavaScript, Angular 14, Bootstrap, Angular material.",
         "Created reusable registration forms/components to streamline development.",
@@ -214,15 +247,36 @@ const workExperiences = {
         "Good understand and experience in UX mockup tools like Invision and Figma.",
         "Analyzed, evaluated, and made recommendations on UI frameworks, technologies, and architecture.",
         "Efficiently resolved various front-end issues during registration to ensure stability.",
+        */
+        "Spearheaded the development of Angular 14 component files for the CRM Registration project, encompassing Caremark and Specialty registrations, utilizing HTML5, SCSS, JavaScript, and TypeScript, Bootstrap and Angular material.",
+        "Designed and implemented reusable registration forms/components, significantly streamlining the development process and enhancing code maintainability.",
+        "Developed a responsive and mobile-friendly registration UI using Angular Material/Bootstrap, improving user experience across various devices.",
+        "Integrated REST API services to build robust applications, ensuring efficient data communication between the front-end and back-end.",
+        "Implemented data validation and error handling with Angular forms, enhancing the accuracy and reliability of user input during registration.",
+        "Enabled seamless navigation and transitions between registration steps using Angular routing, providing a smooth user journey.",
+        "Conducted thorough unit testing using Jasmine and Karma, contributing to the stability and reliability of the application.",
+        "Maintained and enhanced registration features by leveraging core Angular concepts like modularity, observables, dependency injection, etc.",
+        "Optimized the Angular build and deployment process, resulting in faster rendering of registration pages and improved overall web page performance.",
+        "Collaborated with the accessibility team to ensure that registration pages meet WCAG standards, making them accessible to users with disabilities.",
+        "Good understand and experience in UX mockup tools like Invision and Figma.",
+        "Proactively identified and resolved various front-end issues during registration, ensuring the stability and performance of the web application.",
+        "Played a key role in analyzing, evaluating, and making recommendations on UI frameworks, technologies, and architecture, leading to enhanced user interface design and development practices."
       ]
     },
     {
-      role: "Angular Developer",
-      company: "Picwell",
-      companylogo: require("./assets/images/picwell.jpeg"),
-      date: "Sep 2019 – Dec 2021",
+      //eric version
+      // role: "Angular Developer",
+      role: "Web Developer",
+      // company: "Picwell",
+      company: "Sita Health & Life Sciences",
+      // companylogo: require("./assets/images/picwell.jpeg"),
+      companylogo: require("./assets/images/sita.webp"),
+      // date: "Sep 2019 – Dec 2021",
+      date: "Feb 2021 - Aug 2021",
       desc: "",
       descBullets: [
+        //eric version
+        /*
         "Involved in all stages of software development life cycle including analysis, development, implementation, testing and support.",
         "Developed various pages in the applications using HTML5, CSS3, JSON, JavaScript, Angular 8/10, and Angular Material.",
         "Built Angular 8/10 components, UI services to consume rest services using Component based architecture provided by Angular 8/10.",
@@ -234,8 +288,22 @@ const workExperiences = {
         "Automated the build and deployment process using Maven build script.",
         "Responsible for maintaining versions of source code using Git.",
         "Involved in Agile process, two-week Sprints, and daily Scrums to discuss the development of the application."
+        */
+        "Led the development of the company’s internal employee management portal using Angular 8 / 10, HTML5, CSS3, and Angular Material, enhancing the user interface for accessing and managing critical information such as personal and financial data.",
+        "Actively participated in all stages of the software development life cycle, collaborating with cross - functional teams to analyze requirements, develop, implement, and support user interface solutions that align with business objectives.",
+        "Utilized Angular 8 / 10 to architect and develop a dynamic web page, leveraging advanced features such as Routing, Data Binding, Directives, Reactive Forms, Component Communication, Dependency Injection, and Exception Handling to create a highly interactive and responsive user interface that efficiently collects and manages user input.",
+        "Implemented RESTful services consumption in Angular components, facilitating seamless data exchange between the front - end and back - end.",
+        "Integrated D3.js with Angular to develop interactive data visualizations, enabling efficient tracking and analysis of employee metrics and financial data.",
+        "Collaborated on back - end development using Node.js and Express.js, ensuring seamless data handling and server-side logic.",
+        "Integrated MongoDB as the database solution, enabling efficient storage and retrieval of employee information.",
+        "Ensured code quality and maintainability by adhering to best practices in component - based architecture and using Git for version control.",
+        "Participated in Agile methodologies, including two - week sprints and daily scrums, to continuously improve the development process and meet project deadlines.",
+        "Assisted the QA team with writing tests and debugging using Karma and Jasmine, contributing to the overall stability and reliability of the application."
+
       ]
     },
+    //eric version
+    /*
     {
       role: "Angular Developer",
       company: "Evercore Partners",
@@ -256,6 +324,7 @@ const workExperiences = {
         "Participated in daily Scrum meets and used AGILE methodologies with JIRA to manage development process of the project."
       ]
     },
+    
 
     {
       role: "Web Developer",
@@ -276,6 +345,7 @@ const workExperiences = {
         "Utilized GitHub for version Control and source code maintenance needs."
       ]
     },
+    */
   ]
 };
 
@@ -442,7 +512,9 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "267-340-7631",
-  email_address: "ericlin3589@gmail.com"
+  //eric version
+  // email_address: "ericlin3589@gmail.com"
+  email_address: "feng.lin.5789@gmail.com"
 };
 
 // Twitter Section
